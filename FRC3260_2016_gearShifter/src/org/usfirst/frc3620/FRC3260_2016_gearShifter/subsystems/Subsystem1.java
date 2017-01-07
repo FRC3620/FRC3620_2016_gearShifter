@@ -60,5 +60,17 @@ public class Subsystem1 extends Subsystem {
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
     }
+    
+    public void setDriveForward(double move, double rotate) {
+        if (Math.abs(move) <= 0.2) {
+            move = 0;
+        }
+        if (Math.abs(rotate) <= 0.2) {
+            rotate = 0;
+        }
+        robotDrive41.arcadeDrive(move , rotate);
+
+    }
+
 }
 
