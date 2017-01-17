@@ -25,7 +25,7 @@ public class SwitchBackAndForthCommand extends Command {
             Robot.subsystem1.weAreInReverse = false;
         } else {
             Robot.subsystem1.weAreInReverse = true;
-        }
+        }System.out.println("I shifted" + Robot.subsystem1.weAreInReverse );
     }
 
     // Make this return true when this Command no longer needs to run execute()
